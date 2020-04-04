@@ -1,0 +1,31 @@
+#modal {
+  display: flex;
+  justify-content: center;
+}
+
+#modal-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  opacity:1 !important;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s
+}
+
+#modal-child {
+  /* position: absolute; */
+  /* top: 50rem; */
+  
+  background-color: white;
+  width: 30rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  color: #5a5a5a;
+  text-transform: none;
+  box-sizing: border-box;
+  z-index: 11;
+}

@@ -7,10 +7,10 @@ const Nav = ({ currentUser, logout, openModal }) => {
       {!currentUser ? (
         <div>
             <button onClick={() => openModal("LOG IN")}>
-              LOGIN
+              Log In
             </button>
             <button onClick={() => openModal("SIGN UP")}>
-              SIGNUP
+              Sign Up
             </button>
         </div>
       ) : (
@@ -18,10 +18,10 @@ const Nav = ({ currentUser, logout, openModal }) => {
             <Link to="/">
               Home
             </Link>
-            <h1>Welcome, {currentUser.first}.</h1>
-            <div onClick={logout}>
-              LOG OUT
-            </div>
+            <h1>Welcome, {currentUser.username}.</h1>
+            <button onClick={logout}>
+              Log out
+            </button>
         </div>
       )}
     </div>
